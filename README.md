@@ -52,9 +52,9 @@ public class GcmService : GcmServiceBase
 	protected override void OnMessage (Context context, Intent intent)
 	{
 		//Push Notification arrived - print out the keys/values
-		if (intent == null || intent.Extras == null)
+		if (intent != null && intent.Extras != null)
 			foreach (var key in intent.Extras.KeySet())
-				Console.WriteLine("Key: {0}, Value: {1}");
+				Console.WriteLine("Key: {0}, Value: {1}", key, intent.Extras.Get(key));
 	}
 
 	protected override bool OnRecoverableError (Context context, string errorId)
