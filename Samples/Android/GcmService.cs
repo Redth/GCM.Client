@@ -4,6 +4,8 @@ using Android.Content;
 using Android.Util;
 using Gcm.Client;
 
+[assembly: UsesPermission (Android.Manifest.Permission.ReceiveBootCompleted)]
+
 //VERY VERY VERY IMPORTANT NOTE!!!!
 // Your package name MUST NOT start with an uppercase letter.
 // Android does not allow permissions to start with an upper case letter
