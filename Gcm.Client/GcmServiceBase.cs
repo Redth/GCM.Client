@@ -22,7 +22,10 @@ namespace Gcm.Client
 		static object LOCK = new object();
 		static int serviceId = 1;
 
-		static string[] SenderIds = new string[] {};
+        /// <summary>
+        /// The GCM Sender Ids to use. Set by the constructor taking parameters but not by the one that doesn't. Be very careful changing this value, preferably only set it in your constructor and only once.
+        /// </summary>
+		protected string[] SenderIds = new string[] {};
 
 		//int sCounter = 1;
 		Random sRandom = new Random();
