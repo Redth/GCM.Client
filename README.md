@@ -1,3 +1,12 @@
+DEPRECATED
+==========
+
+You should instead be using the Firebase Messaging Client for implementing push notifications on Android.
+
+NuGet: https://www.nuget.org/packages/Xamarin.Firebase.Messaging/
+Sample: https://github.com/xamarin/GooglePlayServicesComponents/tree/master/firebase-messaging/samples
+
+
 Google Cloud Messaging Client
 =============================
 
